@@ -1,0 +1,27 @@
+[package]
+name = "bevy_rapier3d"
+version = "0.1.0"
+authors = ["Sébastien Crozet <developer@crozet.re>"]
+description = "3-dimensional SPH fluids dynamics engine in Rust, official Bevy plugin."
+documentation = "http://docs.rs/bevy_salva3d"
+homepage = "http://salva.rs"
+repository = "https://github.com/dimforge/bevy_salva"
+readme = "README.md"
+keywords = [ "physics", "dynamics", "fluids", "real-time", "SPH" ]
+license = "Apache-2.0"
+edition = "2018"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+path = "../src/lib.rs"
+required-features = [ "dim3" ]
+
+[features]
+default = [ "dim3" ]
+dim3 = []
+
+[dependencies]
+
+
+[dev-dependencies]
